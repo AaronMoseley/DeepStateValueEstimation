@@ -1,1 +1,7 @@
-This is my honors thesis project for HON 491
+A novel reinforcement learning approach for long-term planning tasks that combines deep image analysis models with traditional tree-search algorithms. When training on strategy games, most state-of-the-art reinforcement learning approaches rely entirely on self-play or learning from human strategies. But, self-play leads to early versions of models making entirely random moves and takes longer to train while many tasks that require reinforcement learning don't have established human strategies to use when training models. This new approach, dubbed Deep-State Learning, introduces simple opponents that use hard-coded tree-search algorithms at the beginning of the training process. Later in training, the opponents alternate between mutated self-play and these simple opponents. This strategy allows the model to initially learn intelligent but simple strategies before switching to self-play, reducing the random moves inherent to early models trained with self-play.
+
+An experimental analysis on a custom generic strategy game shows that Deep-State Learning performs better than traditional tree-search algorithms and models trained on self-play by up to 10%.
+
+A paper covering this project in detail is included as HON491Paper.pdf.
+
+This work was completed as my thesis (HON491) for the University of Kentucky's Lewis Honors College under Dr. Jerzy Jaromczyk and Dr. Neil Moore. This project was developed in Python using PyTorch.
